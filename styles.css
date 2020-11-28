@@ -1,0 +1,210 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+    margin-top: 70px;
+}
+
+nav.top-nav {
+    background-color:silver; 
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    box-shadow: 8px 4px 4px #0003;
+    padding-left: 1em;
+
+}
+nav.top-nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+
+}
+nav.top-nav li {
+    font-family: 'Gill Sans';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #fffd;
+    display: block;
+    margin: 0px;
+    padding: 20px 10px;
+    user-select: none;
+    position: relative;
+    float: right;
+}
+nav.top-nav li:hover {
+    background-color: #cdf;
+    color: #FFF;
+    transition: all .5s ease;
+}
+nav.top-nav li:active {
+    background-color: #ccf;
+    
+}
+
+
+.top-nav .pulldown-menu {
+    display: none;
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #8bd;
+    border-radius: 4px;
+    top: 68px;
+    left: 5px;
+    width: 175px;
+}
+
+nav.top-nav .pulldown-menu li{
+    color: #8bd;
+    display: block;
+    padding: 4px;
+    font-weight: 200;
+    float: left;
+}
+
+
+.top-nav li:hover .pulldown-menu {
+    display: block;
+}
+
+
+.project-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 0;
+}
+
+.project-logo {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'EB Garamond', serif;
+    background: transparent;
+    width: 40%;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.subsection {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'EB Garamond', serif;
+    background: transparent;
+    width: 40%;
+    margin-bottom: 150px;
+    padding: 2.5%;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+.section-break {
+    width: 100%;
+    padding: 50px;
+}
+
+.project-description {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    width: 45%;
+}
+
+.title {
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    font-family: 'Gill Sans';
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+.comment {
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.link {
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+    font-family: 'Gill Sans';
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+#down {
+    padding-top: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+#poemtitle {
+    font-family: 'Gill Sans';
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+}
+#byline {
+    font-family: 'Gill Sans';
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 150%;
+}
+#copyright {
+    font-family: 'Gill Sans';
+    font-size: 12px;
+    color: gray;
+}
+
+
+img.rounded {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
